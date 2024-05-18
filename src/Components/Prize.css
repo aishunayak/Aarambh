@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+  .wrapper {
+    max-width: 65rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 5rem;
+    text-align: center;
+    background: #fff;
+    
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 0.0625rem solid #bbb;
+    margin: 3rem 0;
+  }
+  button {
+    height: 250px;
+    width: 200px;
+    font-size: 2em;
+    
+    color: #fff;
+    border:0px;
+   border-radius: 20px;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .first{
+    background: linear-gradient(217deg, rgba(145, 187, 236, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(223, 223, 98, 0.8) , rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(236, 133, 220, 0.8), rgba(0,0,255,0) 70.71%);
+  }
+  .second{
+    background: linear-gradient(217deg, rgba(236, 133, 220, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(145, 187, 236, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(223, 223, 98, 0.8), rgba(0,0,255,0) 70.71%);
+  }
+  .third{
+    background: linear-gradient(217deg, rgba(223, 223, 98, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(236, 133, 220, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(145, 187, 236, 0.8) , rgba(0,0,255,0) 70.71%);
+  }
+  button:hover {
+    
+    color:rgb(234, 66, 66);
+  }
+  button::after {
+    background-color:#ffffff;
+    align-items: center;
+    
+    border: 1px;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+    
+  }
+  .first::after{
+    content: 'YOU';
+    
+  }
+  .second::after{
+    content: "ARE";
+  }
+  .third::after{
+    content: "THE BEST❤️";
+  }
+  button[class^="first"]::after {
+    transition: all 0.35s;
+  }
+  button[class^="first"]:hover::after {
+    left: 1;
+    right: 1;
+    top: 2px;
+    bottom: 40px;
+    transition: all 0.35s;
+  }
+  button.first::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  button.second::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  button[class^="second"]::after {
+    transition: all 0.35s;
+  }
+  button[class^="second"]:hover::after {
+    left: 1;
+    right: 1;
+    top: 2px;
+    bottom: 40px;
+    transition: all 0.35s;
+  }
+  button.third::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  button[class^="third"]::after {
+    transition: all 0.35s;
+  }
+  button[class^="third"]:hover::after {
+    left: 1;
+    right: 1;
+    top: 2px;
+    bottom: 40px;
+    transition: all 0.35s;
+  }
+  #prizehead{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+  }
+  
