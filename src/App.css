@@ -24,11 +24,12 @@ h3 {
 .nav {
   width: 100vw;
   position: fixed;
-
+  z-index: 100000;
   padding: 30px;
   display: flex;
   align-items: center;
   gap: 30px;
+  mix-blend-mode: difference;
   justify-content: space-between;
 }
 .nav img {
@@ -54,7 +55,6 @@ h3 {
   font-size: 15px;
   padding-inline: 15px;
   background-color: transparent;
-  color: #ffffff;
 }
 #register {
   display: flex;
@@ -65,7 +65,7 @@ h3 {
 
 .main {
   height: 600px;
-  width: 1263px;
+  width: 100%;
   background-image: url(C:\Users\Admin\Desktop\vite\Aarambh\Aarambh\src\assets\front2.jpg);
   background-size: 1400px;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.82);
